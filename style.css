@@ -40,6 +40,7 @@ background: rgba(11, 2, 35, 0.10);
 padding-left: 20px;
 }
 .banner{
+    margin-top: 50px;
     margin-left: 10%;
     margin-right: 10%;
     display: flex;
@@ -104,10 +105,60 @@ background: #4EC5F7;
 
 
 
+footer{
+    background: #0B0223;
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+    gap: 20px;
+    margin-top: 30px;
+}
+.foot1{
+    display: flex;
+    
+}
+.foot2{
+    display: flex;
+    gap: 20px;
+}
+.foot3{
+    display: flex;
+    gap: 20px;
+}
+.foot31{
+    display: flex;
+    gap: 20px;
+}
+.foot32{
+    display: flex;
+    gap: 20px;
+}
+.btn-container {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.btn-container button{
+    flex: 0 0 calc(20% - 10px); /* Adjust this value to control the width of each button */
+    margin-bottom: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 80px;
+    border: none ;
+  }
+  .btn-container button:hover{
+    border: 2px solid #FF42A5;
+    color: #FF42A5;
+  }
 
 
 
-@media (max-width: 768px) {
+@media screen and (max-width: 576px) {
     nav{
         flex-direction: column;
     }
@@ -120,8 +171,26 @@ background: #4EC5F7;
     .banner{
         flex-direction: column-reverse;
     }
+    .banner1{
+        padding-left: 15%;
+        padding-top: 5%;
+        
+    }
     .banner1 , .banner2{
         width: 100%;
+        margin-top: 5%;
 
     }
+    .foot2{
+        display: grid;
+        grid-template-columns: repeat(3,100px);
+    }
+    .foot3{
+        flex-direction: column;
+        
+    }
+    .btn-container button{
+        flex: 0 0 calc(33.33% - 10px);
+    }
+    
     }
