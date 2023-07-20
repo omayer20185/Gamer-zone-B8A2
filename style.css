@@ -355,6 +355,9 @@ footer{
         
         z-index: 1; /* Make sure this value is higher than the first */
     }
+    .part1 h2{
+        font-size: 28px;
+    }
     .part1{
         width: 80%;
         height: 60%;
@@ -386,12 +389,14 @@ footer{
             flex-direction: column;
         }
         .part1{
-            width: 100%;
+            width: 90%;
             height: 100%;
-            margin-right: 10%;
+        }
+        .part1 h2{
+            font-size: 28px;
         }
         .collage{
-            width: 100%;
+            width: 90%;
             height: 550px;
         
     
